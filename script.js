@@ -78,6 +78,7 @@ const resetGuesses = () => {
   firstGuess = '';
   secondGuess = '';
   count = 0;
+  previousTarget = null;
 
   var selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
@@ -92,6 +93,7 @@ grid.addEventListener('click', function (event) {
   }
   if (count < 2) {
     count++;
+    previousTarget = clicked;
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       console.log(firstGuess);

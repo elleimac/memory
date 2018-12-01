@@ -6,7 +6,8 @@
 
 body {
   margin: 20px 0;
-  background: url(background.jpg) no-repeat center;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
 }
 
 .grid {
@@ -23,7 +24,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 150px;
+  height: 200px;
   width: 150px;
 }
 
@@ -53,7 +54,7 @@ body {
 
 .back {
   transform: rotateY(180deg);
-  background-color: white;
+  background-color: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -63,5 +64,5 @@ body {
 }
 
 .match .front {
-  background: white !important;
+  background: none; !important;
 }
